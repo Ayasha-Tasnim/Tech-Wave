@@ -449,8 +449,8 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
   }
-  .about-box{
-    width:auto;
+  .about-box {
+    width: auto;
   }
 
   .box-h2 {
@@ -470,8 +470,33 @@
       'zap-fast'
       'resource';
   }
+  .f-heading{
+    font-size: 32px;
+  }
+  .features {
+    padding: 40px 20px;
+  }
 
   .features-1-content {
     grid-template-columns: repeat(1, 1fr);
   }
+  .f-2-con{
+    flex-direction:column;
+  }
+  .f-con-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Footer-heading{
+    font-size: 35px;
+  }
+}
+.footer-con {
+  padding: 40px 20px;
+}
+.f-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  
 }
