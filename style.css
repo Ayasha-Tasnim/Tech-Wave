@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   margin: 0;
   padding: 0;
+}
+body {
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar {
@@ -10,6 +14,9 @@
   justify-content: space-around;
   align-items: center;
   /* border-bottom: 2px solid chartreuse; */
+}
+.arrow{
+  font-size: 4px;
 }
 /* For Responsive Purpose */
 .menu {
@@ -26,18 +33,27 @@
 }
 .button-1 {
   border-radius: 1000px;
+  font-weight: 400px;
   font-size: 16px;
+  gap:8px;
   padding: 12px 16px;
   color: white;
   background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
   cursor: pointer;
   display: flex;
   align-items: center;
+  
+}
+.fa-arrow-right{
+  width: 10px;
+  height: 10px;
+  font-weight: 100px;
+  
 }
 
 .logo {
-  font-size:60px;
-  font-weight:bold;
+  font-size: 60px;
+  font-weight: bold;
 }
 .logo span:first-child {
   color: white;
@@ -51,7 +67,7 @@
 .banner {
   /* border: 2px solid white; */
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   box-sizing: border-box;
   background-image: url('/assets/hero-bg.png');
   background-repeat: no-repeat;
@@ -332,11 +348,13 @@
 }
 /* Footer */
 .footer {
-  height: 412px;
+  /* height: 412px; */
+padding: 120px 0px;
   background-image: url('/assets/footer-bg.png');
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 100% 100%;
+  
 }
 .footer-con {
   padding: 146px 109px 94px 131px;
@@ -405,15 +423,18 @@
 /* For Mobile */
 
 @media (max-width: 575px) {
+  .banner{
+    background-image: url("assets/small\ device\ banner\ .png");
+    height: 70vh;
+  }
   .navbar {
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
   }
   .logo {
-  font-size:30px;
-  
-}
+    font-size: 30px;
+  }
   .menu {
     display: flex;
   }
@@ -438,6 +459,8 @@
   }
   .banner-main {
     padding: 40px 20px;
+    height: auto;
+    width:auto;
   }
   .b-heading {
     font-size: 40px;
@@ -474,7 +497,7 @@
       'zap-fast'
       'resource';
   }
-  .f-heading{
+  .f-heading {
     font-size: 32px;
   }
   .features {
@@ -484,15 +507,15 @@
   .features-1-content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .f-2-con{
-    flex-direction:column;
+  .f-2-con {
+    flex-direction: column;
   }
-  .f-con-text{
+  .f-con-text {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
-  .Footer-heading{
+  .Footer-heading {
     font-size: 35px;
   }
 }
@@ -502,5 +525,11 @@
 .f-list ul {
   display: flex;
   flex-wrap: wrap;
+} 
+.footer {
   
+  background-image: url('/assets/small\ Image\ footer.png');
+  padding: 0px 0px;
+  background-size: 100% 100% ;
+ 
 }
