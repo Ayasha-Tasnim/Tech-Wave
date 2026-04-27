@@ -15,7 +15,7 @@ body {
   align-items: center;
   /* border-bottom: 2px solid chartreuse; */
 }
-.arrow{
+.arrow {
   font-size: 4px;
 }
 /* For Responsive Purpose */
@@ -35,20 +35,21 @@ body {
   border-radius: 1000px;
   font-weight: 400px;
   font-size: 16px;
-  gap:8px;
+  gap: 8px;
   padding: 12px 16px;
   color: white;
   background: linear-gradient(45deg, #f7e93f, #fb09b4, #9100f8);
   cursor: pointer;
   display: flex;
   align-items: center;
-  
 }
-.fa-arrow-right{
+.button-1:hover {
+  background: linear-gradient(60deg, #fb09b4, #f7e93f, #9100f8);
+}
+.fa-arrow-right {
   width: 10px;
   height: 10px;
   font-weight: 100px;
-  
 }
 
 .logo {
@@ -89,7 +90,7 @@ body {
 }
 .main-1 {
   /* border: 2px solid rgb(235, 233, 239); */
-  background-image: url('/assets/hero-circle.png');
+
   background-repeat: no-repeat;
   background-position: center;
   height: 350px;
@@ -98,6 +99,22 @@ body {
   align-items: center;
   justify-content: center;
   position: relative;
+}
+.main-img1 {
+  z-index: 2;
+}
+.main-img2 {
+  position: absolute;
+  width: 100%;
+  animation: Ayasha 2s linear infinite;
+}
+@keyframes Ayasha {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .main-1 span {
   position: absolute;
@@ -138,6 +155,10 @@ body {
   cursor: pointer;
   display: inline-flex;
   gap: 8px;
+  transition: all 1s;
+}
+.button:hover {
+  background: linear-gradient(60deg, #fb09b4, #f7e93f, #9100f8);
 }
 .green-button {
   background: transparent;
@@ -349,12 +370,11 @@ body {
 /* Footer */
 .footer {
   /* height: 412px; */
-padding: 120px 0px;
+  padding: 120px 0px;
   background-image: url('/assets/footer-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  
 }
 .footer-con {
   padding: 146px 109px 94px 131px;
@@ -423,8 +443,8 @@ padding: 120px 0px;
 /* For Mobile */
 
 @media (max-width: 575px) {
-  .banner{
-    background-image: url("assets/small\ device\ banner\ .png");
+  .banner {
+    background-image: url('assets/small\ device\ banner\ .png');
     height: 70vh;
   }
   .navbar {
@@ -447,9 +467,10 @@ padding: 120px 0px;
     height: 200px;
     border-radius: 1000px;
   }
-  .main-1 img {
+
+  /* .main-1 img {
     width: 60px;
-  }
+  } */
   .main-1 span {
     padding: 8px 16px;
     font-size: 14px;
@@ -460,7 +481,7 @@ padding: 120px 0px;
   .banner-main {
     padding: 40px 20px;
     height: auto;
-    width:auto;
+    width: auto;
   }
   .b-heading {
     font-size: 40px;
@@ -470,6 +491,9 @@ padding: 120px 0px;
   }
   .for-h2 {
     font-size: 32px;
+  }
+  .main-img1 {
+    width: 60px;
   }
   .about-3 {
     display: grid;
@@ -525,11 +549,9 @@ padding: 120px 0px;
 .f-list ul {
   display: flex;
   flex-wrap: wrap;
-} 
+}
 .footer {
-  
-  background-image: url('/assets/small\ Image\ footer.png');
+  /* background-image: url('/assets/small\ Image\ footer.png'); */
   padding: 0px 0px;
-  background-size: 100% 100% ;
- 
+  background-size: 100% 100%;
 }
