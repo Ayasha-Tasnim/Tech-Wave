@@ -70,7 +70,7 @@ body {
   width: 100%;
   height: 90vh;
   box-sizing: border-box;
-  background-image: url('/assets/hero-bg.png');
+  background-image: url('./assets/hero-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -371,7 +371,7 @@ body {
 .footer {
   /* height: 412px; */
   padding: 120px 0px;
-  background-image: url('/assets/footer-bg.png');
+  background-image: url('./assets/footer-bg.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
@@ -444,7 +444,7 @@ body {
 
 @media (max-width: 575px) {
   .banner {
-    background-image: url('assets/small\ device\ banner\ .png');
+    background-image: url('./assets/small\ device\ banner\ .png');
     height: 70vh;
   }
   .navbar {
